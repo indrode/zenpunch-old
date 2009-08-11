@@ -1,5 +1,5 @@
 class ZenController < ApplicationController
-  layout "zen", :except => { "logs", "zenlog" }
+  layout "zen"
 
   # GETs should be safe (see http://www.w3.org/2001/tag/doc/whenToUseGet.html)
   verify :method => :post, :only => [ :logcomment],
