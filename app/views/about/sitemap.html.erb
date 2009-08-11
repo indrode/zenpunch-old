@@ -1,0 +1,52 @@
+<% content_for :otherscripts do %>
+	<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/slickmap.css" />
+<% end %>
+
+
+<% content_for :nav do %>
+	<div id="nav">
+	 	<ul id="iconmenu">
+			<li id="home"><a href="/">&nbsp;</a></li>
+			<li id="about"><a href="/about">&nbsp;</a></li>
+			<li id="portfolio"><a href="/portfolio">&nbsp;</a></li>
+			<li id="gallery"><a href="/gallery">&nbsp;</a></li>
+		</ul>
+	</div>
+<% end %>
+
+
+
+<div class="stub">
+	<img src="/images/ico_search.png" width="55" class="stub" alt="About" /><span style="font-size:1.3em; color:#fff;">About &rarr; Sitemap</span><br />A sitemap is "a list of pages of a web site accessible to crawlers or users [...] typically organized in hierarchical fashion. This helps visitors and search engine bots find pages on the site". In this case, it mostly meant for visitors.
+</div>
+
+
+<div id="maincontent">
+	<div id="slickmap">
+		<div class="sitemap">	
+			<ul id="primaryNav">			
+				<li><a href="/">Home</a>
+					<ul>
+						<li><a href="/archive">Archive</a></li>
+						<li><a href="/admin">Core</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</li>
+				<li><a href="/about">About</a>
+					<ul>
+						<li><a href="/about/networks">Networks</a></li>
+						<li><a href="/about/music">Music</a></li>
+						<li><a href="/about/sitemap">Sitemap</a></li>						
+					</ul>
+				</li>
+				<li><a href="/portfolio">Portfolio</a>
+					<ul>
+						<li><a href="/portfolio/projects">Project Details</a></li>
+					</ul>
+				</li>
+				<li><a href="/gallery">Gallery</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="clear_it"></div>

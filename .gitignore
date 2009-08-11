@@ -1,0 +1,9 @@
+.DS_Store
+log/*.log
+tmp/**/*
+test/**/*
+db/**/*
+config/database.yml
+public/images/portfolio/*.*
+public/images/slickmap/*.*
+public/images/core/*.*

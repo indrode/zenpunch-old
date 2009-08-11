@@ -1,0 +1,7 @@
+<% if prodnote.displaynote == 1 -%>
+	<li class="<%= cycle("even", "odd") %>">
+		<a href="/portfolio/projects/<%= prodnote.id %>"><h2><small><%= sprintf("%03d", prodnote.id) %></small>&nbsp;<%= h prodnote.title %></h2>
+		<p class="steps"><%= h prodnote.description %></p></a>
+	</li>
+<% end -%>
+	

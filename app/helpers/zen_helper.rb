@@ -1,0 +1,2 @@
+module ZenHelper
+end

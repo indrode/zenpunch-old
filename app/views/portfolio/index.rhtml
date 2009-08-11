@@ -1,0 +1,23 @@
+<% content_for :nav do %>
+	<div id="nav">
+	 	<ul id="iconmenu">
+			<li id="home"><a href="/">&nbsp;</a></li>
+			<li id="about"><a href="/about">&nbsp;</a></li>
+			<li id="portfolio">&nbsp;</li>
+			<li id="gallery"><a href="/gallery">&nbsp;</a></li>
+		</ul>
+	</div>
+<% end %>
+
+<div class="stub">
+	<img src="/images/ico_favs.png" width="55" class="stub" alt="Portfolio" /><span style="font-size:1.3em; color:#fff;">My portfolio of projects...</span><br />Below, you can find a list of projects I have worked on in the past few years. Some information may be incomplete as of now, but I will try my best to update the missing parts from time to time.
+</div>
+
+<div id="maincontent">
+	<%= @content.body %>
+	<div id="projectlist">	
+	<ol class="steps">
+	<%= render :partial => "prodnote", :collection => @prodnotes, :order => 'created_at DESC' %>
+	</ol>
+	</div>
+</div>
