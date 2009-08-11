@@ -22,21 +22,6 @@ class ZenController < ApplicationController
     end
   end
   
-  def form
-    @blog = Blog.find(params[:id])
-    render :layout => 'form'
-  end
-  
-  def logs
-    @post = Post.find(params[:id])
-    render :layout => 'permanent'
-  end
-
-  def zenlog
-    @posts = Post.find(:all, :order => 'created_at DESC') 
-    render :layout => false
-  end
-  
   def oops
     # triggered when 404 error is found
     @pagetitle = "Oops! Error 404 - File Not Found"
