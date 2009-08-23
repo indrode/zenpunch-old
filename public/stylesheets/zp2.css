@@ -124,13 +124,13 @@ body {
 	margin-bottom:10px;
 	color:#ccc;
 	color:#eee;
-	font-size: 1.4em;
+	xfont-size: 1.4em;
 	xfont-weight:200;
 	line-height:1.6em;
 	/* test: */
 	xfont-weight: bold;
-	font-size:1.3em;
-	line-height:2em;
+	font-size:1.5em;
+	line-height:1.7em;
 	color:#cfcfcf;
 	color:#fff;
 	font-weight:150;
@@ -847,7 +847,7 @@ big respect to tha great mastah: Jeremie Tisseau
 #panel p {
 	margin: 5px 0;
 	padding: 0;
-	line-height:1.3em;
+	line-height:1.6em;
 }
 
 
