@@ -1,8 +1,0 @@
-<% currentday = 0
-for post in @posts
-if (post.created_at.strftime("%d %Y") != currentday) -%>
-<h4><%= post.created_at.strftime("%B %d, %Y") %></h4>
-<% currentday = post.created_at.strftime("%d %Y") -%>
-<% end -%>
-<p><small><%= sprintf("%03d", post.id) %></small> <%= post.body %>&nbsp;&nbsp;<small><a href="/archive/<%= post.id %>">&infin;</a></small></p>
-<% end -%>
